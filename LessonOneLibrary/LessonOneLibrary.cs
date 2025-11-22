@@ -19,12 +19,9 @@
         {
             string numbers = "";
 
-            for (int i = 0; i <= number; i++)
+            for (int i = 1; i <= number; i+=2)
             {
-                if (i % 2 != 0)
-                {
-                    numbers += i + ",";
-                }
+                numbers += i + ",";
             }
 
             numbers = numbers.Remove(numbers.Length - 1);
@@ -54,11 +51,11 @@
                         str += "  ";
                     }
                 }
-
                 str += "\n";
-            }
 
+            }
             return str;
-        }
+
+        }   
     }
 }

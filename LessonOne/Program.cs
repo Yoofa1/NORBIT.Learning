@@ -10,7 +10,7 @@ namespace LessonOneApp
         {
             Console.Write("Введите число: ");
             string? str = Console.ReadLine();
-            int num = Int32.Parse(str);
+            int num = int.Parse(str);
 
             var oddNumbersResult = WorkingWithNumbers.GetOddNumbers(num);
 
