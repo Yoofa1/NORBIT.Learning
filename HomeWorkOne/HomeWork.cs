@@ -1,16 +1,17 @@
 ﻿namespace HomeworkOneLibrary
 {
-    class Program
+    /// <summary>
+    /// Работает с вводимым привествием пользователя
+    /// </summary>
+    public static class WorkingWithGreeting
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Greeting: ");
-            string greetingWord = Console.ReadLine();
-
-            Console.WriteLine(GetAnswer(greetingWord));
-        }
-
-        static string GetAnswer(string word)
+        /// <summary>
+        /// Проверяет вводимое слово пользователем на правильность написание.
+        /// Слово проверки - "hello"
+        /// </summary>
+        /// <param name="word"></param>
+        /// <returns>YES/NO</returns>
+        public static string GetAnswer(string word)
         {
             string example = "hello";
             int indexExample = 0;

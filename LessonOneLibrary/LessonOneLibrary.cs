@@ -1,7 +1,20 @@
 ﻿namespace LessonOneLibrary
 {
+
+    /// <summary>
+    /// Работает с числом, вводимым пользователем.
+    /// Функции класса:
+    ///     1. GetOddNumbers - возвращает строку неченых чисел
+    ///     2. GetSquare - возвращает квадрат из "Х" со сторонами n 
+    /// </summary>
     public static class WorkingWithNumbers
     {
+
+        /// <summary>
+        /// Проверяет числа от 1 до n на нечетность
+        /// </summary>
+        /// <param name="number">принимаемый аргумент</param>
+        /// <returns>строку нечетных чисел</returns>
         public static string GetOddNumbers(int number)
         {
             string numbers = "";
@@ -19,6 +32,11 @@
             return numbers;
         }
 
+        /// <summary>
+        /// Создает квадрат со сторонами n
+        /// </summary>
+        /// <param name="number">принимаемый аргумент</param>
+        /// <returns>квадрат из "Х"</returns>
         public static string GetSquare(int number)
         {
             string str = string.Empty;
