@@ -1,30 +1,33 @@
-﻿class Program
+﻿namespace HomeworkOne
 {
-    static void Main(string[] args)
+    class Program
     {
-        Console.WriteLine("Greeting: ");
-        string greetingWord = Console.ReadLine();
-
-        Console.WriteLine(GetAnswer(greetingWord));
-    }
-
-    static string GetAnswer(string word)
-    {
-        string example = "hello";
-        int indexExample = 0;
-
-        foreach (char c in word)
+        static void Main(string[] args)
         {
-            if (c == example[indexExample])
-            {
-                indexExample++;
-            }
+            Console.WriteLine("Greeting: ");
+            string greetingWord = Console.ReadLine();
 
-            if (indexExample == example.Length)
-            {
-                return "YES";
-            }
+            Console.WriteLine(GetAnswer(greetingWord));
         }
-        return "NO";
+
+        static string GetAnswer(string word)
+        {
+            string example = "hello";
+            int indexExample = 0;
+
+            foreach (char c in word)
+            {
+                if (c == example[indexExample])
+                {
+                    indexExample++;
+                }
+
+                if (indexExample == example.Length)
+                {
+                    return "YES";
+                }
+            }
+            return "NO";
+        }
     }
 }

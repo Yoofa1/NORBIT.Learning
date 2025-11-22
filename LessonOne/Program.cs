@@ -1,55 +1,58 @@
 ﻿using System;
 
-class Program
+namespace LessonOneApp
 {
-    static void Main(string[] args)
+    class Program
     {
-        Console.Write("Введите число: ");
-        string str = Console.ReadLine();
-        int num = Int32.Parse(str);
-
-        Console.WriteLine(GetOddNumbers(num));
-        Console.WriteLine(GetSquare(num));
-    }
-
-    static string GetOddNumbers(int num)
-    {
-        string numbers = "";
-
-        for (int i = 0; i <= num; i++)
+        static void Main(string[] args)
         {
-            if (i % 2 != 0)
-            {
-                numbers += i + ",";
-            }
+            Console.Write("Введите число: ");
+            string str = Console.ReadLine();
+            int num = Int32.Parse(str);
+
+            Console.WriteLine(GetOddNumbers(num));
+            Console.WriteLine(GetSquare(num));
         }
 
-        numbers = numbers.Remove(numbers.Length - 1);
-
-        return numbers;
-    }
-
-    static string GetSquare(int num)
-    {
-        string str = string.Empty;
-
-        for (int i = 0; i < num; i++)
+        static string GetOddNumbers(int num)
         {
-            for (int j = 0; j < num; j++)
+            string numbers = "";
+
+            for (int i = 0; i <= num; i++)
             {
-                if ((i == 0 || i == num - 1) || (j == 0 || j == num - 1))
+                if (i % 2 != 0)
                 {
-                    str += "X ";
-                }
-                else
-                {
-                    str += "  ";
+                    numbers += i + ",";
                 }
             }
 
-            str += "\n";
+            numbers = numbers.Remove(numbers.Length - 1);
+
+            return numbers;
         }
 
-        return str;
+        static string GetSquare(int num)
+        {
+            string str = string.Empty;
+
+            for (int i = 0; i < num; i++)
+            {
+                for (int j = 0; j < num; j++)
+                {
+                    if ((i == 0 || i == num - 1) || (j == 0 || j == num - 1))
+                    {
+                        str += "X ";
+                    }
+                    else
+                    {
+                        str += "  ";
+                    }
+                }
+
+                str += "\n";
+            }
+
+            return str;
+        }
     }
 }
