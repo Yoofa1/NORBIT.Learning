@@ -1,4 +1,4 @@
-﻿namespace HomeworkOne
+﻿namespace HomeworkOneLibrary
 {
     class Program
     {
