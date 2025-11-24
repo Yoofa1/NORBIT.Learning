@@ -11,9 +11,8 @@
         /// </summary>
         /// <param name="word"></param>
         /// <returns>YES/NO</returns>
-        public static string GetAnswer(string word)
+        public static string GetAnswer(string word, string example)
         {
-            string example = "hello";
             int indexExample = 0;
 
             foreach (char c in word)

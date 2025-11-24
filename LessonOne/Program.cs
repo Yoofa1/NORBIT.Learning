@@ -21,7 +21,7 @@ namespace LessonOneApp
             Console.Write("Введите приветсвие: ");
             string? greetingWord = Console.ReadLine();
 
-            var greetingResult = WorkingWithGreeting.GetAnswer(greetingWord);
+            var greetingResult = WorkingWithGreeting.GetAnswer(greetingWord, "hello");
 
             Console.WriteLine(greetingResult);
         }
