@@ -9,7 +9,6 @@
     /// </summary>
     public static class WorkingWithNumbers
     {
-
         /// <summary>
         /// Проверяет числа от 1 до n на нечетность
         /// </summary>

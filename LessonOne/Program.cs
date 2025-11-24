@@ -19,6 +19,8 @@ namespace LessonOneApp
             string? str = Console.ReadLine();
             int num = int.Parse(str);
 
+            CheckValueGreatThan(num, "Ожидается значение > 0", nameof(num));
+
             var oddNumbersResult = WorkingWithNumbers.GetOddNumbers(num);
 
             var squareResult = WorkingWithNumbers.GetSquare(num);
@@ -34,6 +36,15 @@ namespace LessonOneApp
             var greetingResult = WorkingWithGreeting.GetAnswer(greetingWord, "hello");
 
             Console.WriteLine(greetingResult);
+        }
+
+        static void CheckValueGreatThan(int value, string message, 
+            string paramName, int limit = 0)
+        {
+            if (value < limit)
+            {
+                throw new ArgumentException(message, paramName);
+            }
         }
     }
 }
