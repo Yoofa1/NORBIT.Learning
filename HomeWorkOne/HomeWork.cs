@@ -11,7 +11,7 @@
         /// </summary>
         /// <param name="word"></param>
         /// <returns>YES/NO</returns>
-        public static string GetAnswer(string word, string example)
+        public static bool GetAnswer(string word, string example)
         {
             int indexExample = 0;
 
@@ -24,10 +24,10 @@
 
                 if (indexExample == example.Length)
                 {
-                    return "YES";
+                    return true;
                 }
             }
-            return "NO";
+            return false;
         }
     }
 }

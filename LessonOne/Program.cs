@@ -8,6 +8,13 @@ namespace LessonOneApp
     {
         static void Main(string[] args)
         {
+            GetNumbersAndSquare();
+
+            Greeting();
+        }
+
+        static void GetNumbersAndSquare()
+        {
             Console.Write("Введите число: ");
             string? str = Console.ReadLine();
             int num = int.Parse(str);
@@ -17,7 +24,10 @@ namespace LessonOneApp
             var squareResult = WorkingWithNumbers.GetSquare(num);
 
             Console.WriteLine(oddNumbersResult + "\n" + squareResult);
+        }
 
+        static void Greeting()
+        {
             Console.Write("Введите приветсвие: ");
             string? greetingWord = Console.ReadLine();
 
