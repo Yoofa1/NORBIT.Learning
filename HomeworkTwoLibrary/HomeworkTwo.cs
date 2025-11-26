@@ -2,14 +2,14 @@
 {
     /// <summary>
     /// Класс, в котором реализованно три функции:
-    ///     1. GetDiamond - рисует ромб
-    ///     2. GetTriangle - рисует треугольник
-    ///     3. GetArrow - рисует стрелку
+    ///     1. GetDiamond - формирует ромб
+    ///     2. GetTriangle - формирует треугольник
+    ///     3. GetArrow - формирует стрелку
     /// </summary>
     public static class HomeworkTwo
     {
         /// <summary>
-        /// Рисует ромб со сторонами N
+        /// Формирует ромб со сторонами N
         /// </summary>
         /// <param name="value"></param>
         /// <returns>ромб</returns>
@@ -55,7 +55,7 @@
         }
 
         /// <summary>
-        /// Рисует равносторонний треугольник
+        /// Формирует равносторонний треугольник
         /// </summary>
         /// <param name="value"></param>
         /// <returns>треугольник</returns>
@@ -84,7 +84,7 @@
         }
 
         /// <summary>
-        /// Рисует стрелку
+        /// Формирует стрелку
         /// </summary>
         /// <param name="value"></param>
         /// <returns>стрелка</returns>
