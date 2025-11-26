@@ -1,5 +1,6 @@
 ﻿using HomeworkOneLibrary;
 using LessonOneLibrary;
+using HomeworkTwoLibrary;
 using System;
 
 namespace LessonOneApp
@@ -11,8 +12,15 @@ namespace LessonOneApp
             GetNumbersAndSquare();
 
             Greeting();
+
+            GetArrowN();
+
+            GetTriangleN();
+
+            GetRhomb();
         }
 
+        // первое дз
         static void GetNumbersAndSquare()
         {
             Console.Write("Введите число: ");
@@ -38,6 +46,47 @@ namespace LessonOneApp
             Console.WriteLine(greetingResult);
         }
 
+        // второе дз
+        static void GetRhomb()
+        {
+            Console.Write("Введите число для построения ромба: ");
+            string? numString = Console.ReadLine();
+            int num = int.Parse(numString);
+
+            CheckValueGreatThan(num, "Ожидается значение > 0", nameof(num));
+
+            var diamondResult = HomeworkTwo.GetDiamond(num);
+
+            Console.WriteLine(diamondResult);
+        }
+
+        static void GetTriangleN()
+        {
+            Console.Write("Введите число для построения треугольника: ");
+            string? numString = Console.ReadLine();
+            int num = int.Parse(numString);
+
+            CheckValueGreatThan(num, "Ожидается значение > 0", nameof(num));
+
+            var triangleResult = HomeworkTwo.GetTriangle(num);
+
+            Console.WriteLine(triangleResult);
+        }
+
+        static void GetArrowN()
+        {
+            Console.Write("Введите число для построения стрелки: ");
+            string? numString = Console.ReadLine();
+            int num = int.Parse(numString);
+
+            CheckValueGreatThan(num, "Ожидается значение > 0", nameof(num));
+
+            var arrowResult = HomeworkTwo.GetArrow(num);
+
+            Console.WriteLine(arrowResult);
+        }
+        
+        // проверка
         static void CheckValueGreatThan(int value, string message, 
             string paramName, int limit = 0)
         {

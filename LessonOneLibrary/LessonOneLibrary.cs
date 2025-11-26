@@ -35,7 +35,7 @@
         /// <returns>квадрат из "Х"</returns>
         public static string GetSquare(int number)
         {
-            string str = string.Empty;
+            string square = string.Empty;
 
             for (int i = 0; i < number; i++)
             {
@@ -43,17 +43,17 @@
                 {
                     if ((i == 0 || i == number - 1) || (j == 0 || j == number - 1))
                     {
-                        str += "X ";
+                        square += "X ";
                     }
                     else
                     {
-                        str += "  ";
+                        square += "  ";
                     }
                 }
-                str += "\n";
+                square += "\n";
 
             }
-            return str;
+            return square;
 
         }   
     }
