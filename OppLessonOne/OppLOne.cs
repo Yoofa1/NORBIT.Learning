@@ -1,13 +1,12 @@
-﻿
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
 
-internal class Program
+internal class OppLOne
 {
     static void Main(string[] args)
     {
         var diskC = new Drive();
-        diskC.TotalSize = -23456;
+        diskC.TotalSize = 23456;
 
         var diskCTotalSize = diskC.TotalSize;
 
@@ -32,6 +31,7 @@ internal class Program
 
             }
         });
+
     }
 }
 
