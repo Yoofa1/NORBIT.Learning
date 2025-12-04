@@ -56,7 +56,11 @@
             DisplayItemsInfo(items);
         }
 
-        // вывод
+        /// <summary>
+        /// Выводит объекты и их значения в консоль.
+        /// </summary>
+        /// <param name="items"></param>
+        /// <param name="indent"></param>
         static void DisplayItemsInfo(List<IOrderProcessingSystem> items, string indent = "|| ")
         {
             foreach (var item in items)
@@ -128,6 +132,7 @@
     }
 
     /// <summary>
+    /// Класс ПОЛЬЗОВАТЕЛЬ со следующими атрибутами:
     /// - CustomerID
     /// - CustomerName
     /// - Balance
@@ -141,6 +146,7 @@
     }
 
     /// <summary>
+    /// Класс ТОВАР со следующими атрибутами:
     /// - ProductID
     /// - ProductName
     /// - Price
@@ -153,6 +159,7 @@
     }
 
     /// <summary>
+    /// Класс КОРЗИНА со следующими атрибутами:
     /// - CartID
     /// </summary>
     public class Cart : IOrderProcessingSystem
@@ -162,6 +169,7 @@
     }
 
     /// <summary>
+    /// Класс ОПЛАТА со следующими атрибутами:
     /// - PaymentID
     /// - PaymentType
     /// - PaymentDate
@@ -175,6 +183,7 @@
     }
 
     /// <summary>
+    /// Класс ЗАКАЗ со следующими атрибутами:
     /// - OrderID
     /// - OrderDate
     /// </summary>

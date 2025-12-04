@@ -85,7 +85,14 @@ namespace LessonOneApp
             Console.WriteLine(arrowResult);
         }
 
-        // проверка
+        /// <summary>
+        /// Проверяем, что <paramref name="value"/> >= 0.
+        /// </summary>
+        /// <param name="value"></param>
+        /// <param name="message"></param>
+        /// <param name="paramName"></param>
+        /// <param name="limit"></param>
+        /// <exception cref="ArgumentException"></exception>
         static void CheckValueGreatThan(int value, string message,
             string paramName, int limit = 0)
         {

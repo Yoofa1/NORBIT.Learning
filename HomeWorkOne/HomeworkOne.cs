@@ -33,6 +33,15 @@
             }
             return false;
         }
+
+        /// <summary>
+        /// Проверка, что <paramref name="word"/> не является пустой строкой
+        /// </summary>
+        /// <param name="word"></param>
+        /// <param name="message"></param>
+        /// <param name="paramName"></param>
+        /// <param name="limit"></param>
+        /// <exception cref="ArgumentException"></exception>
         public static void CheckValueGreaterThan(string word, string message,
             string paramName, int limit = 0)
         {

@@ -3,12 +3,12 @@
     [TestClass()]
     public class WorkingWithGreetingTests
     {
-        [DataRow("heeeeeellllllooooo", "hello", true)]  
-        [DataRow("hlelo", "hello", false)]              
-        [DataRow("HELLO", "hello", true)]              
+        [DataRow("heeeeeellllllooooo", "hello", true)]
+        [DataRow("hlelo", "hello", false)]
+        [DataRow("HELLO", "hello", true)]
         [DataRow("hello", "hello", true)]
-        [DataRow("123123", "hello", false)]             
-        [DataRow("Good Morning", "hello", false)]       
+        [DataRow("123123", "hello", false)]
+        [DataRow("Good Morning", "hello", false)]
         [DataRow("Hello world!", "hello", true)]
         [DataRow("12314", "1234", true)]
         [TestMethod()]
@@ -20,7 +20,7 @@
         }
 
         [DataRow("", "hello", true)]
-        [DataRow("hello", "",  false)]
+        [DataRow("hello", "", false)]
         [ExpectedException(typeof(ArgumentException))]
         [TestMethod()]
         public void GetAnswer_InvalidParams_ThrowsException(string word, string example, bool expectedAnswer)
