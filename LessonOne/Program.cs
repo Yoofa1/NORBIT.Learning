@@ -8,19 +8,23 @@ namespace LessonOneApp
     {
         static void Main(string[] args)
         {
-            // GetNumbersAndSquare();
+            OutputOddNumbers();
 
-            Greeting();
+            OutputSquare();
 
-            GetArrowN();
+            OutputAnswer();
 
-            GetTriangleN();
+            OutputArrow();
 
-            GetRhomb();
+            OutputTriangle();
+
+            OutputRhomb();
         }
 
-        // первое дз
-        static void GetNumbersAndSquare()
+        /// <summary>
+        /// Вывод строки нечетных чисел
+        /// </summary>
+        static void OutputOddNumbers()
         {
             Console.Write("Введите число: ");
             string? str = Console.ReadLine();
@@ -30,12 +34,29 @@ namespace LessonOneApp
 
             var oddNumbersResult = WorkingWithNumbers.GetOddNumbers(num);
 
-            var squareResult = WorkingWithNumbers.GetSquare(num);
-
-            Console.WriteLine(oddNumbersResult + "\n" + squareResult);
+            Console.WriteLine(oddNumbersResult);
         }
 
-        static void Greeting()
+        /// <summary>
+        /// Вывод квадрата с заданной пользователем стороной
+        /// </summary>
+        static void OutputSquare()
+        {
+            Console.Write("Введите число: ");
+            string? str = Console.ReadLine();
+            int num = int.Parse(str);
+
+            CheckValueGreatThan(num, "Ожидается значение > 0", nameof(num));
+
+            var squareResult = WorkingWithNumbers.GetSquare(num);
+
+            Console.WriteLine(squareResult);
+        }
+
+        /// <summary>
+        /// Вывод ответа проверки приветсвия (True/False)
+        /// </summary>
+        static void OutputAnswer()
         {
             Console.Write("Введите приветсвие: ");
             string? greetingWord = Console.ReadLine();
@@ -45,8 +66,10 @@ namespace LessonOneApp
             Console.WriteLine(greetingResult);
         }
 
-        // второе дз
-        static void GetRhomb()
+        /// <summary>
+        /// Вывод ромба 
+        /// </summary>
+        static void OutputRhomb()
         {
             Console.Write("Введите число для построения ромба: ");
             string? numString = Console.ReadLine();
@@ -59,7 +82,10 @@ namespace LessonOneApp
             Console.WriteLine(diamondResult);
         }
 
-        static void GetTriangleN()
+        /// <summary>
+        /// Вывод треугольника с заданной пользователем стороной
+        /// </summary>
+        static void OutputTriangle()
         {
             Console.Write("Введите число для построения треугольника: ");
             string? numString = Console.ReadLine();
@@ -72,7 +98,10 @@ namespace LessonOneApp
             Console.WriteLine(triangleResult);
         }
 
-        static void GetArrowN()
+        /// <summary>
+        /// Вывод стрелки
+        /// </summary>
+        static void OutputArrow()
         {
             Console.Write("Введите число для построения стрелки: ");
             string? numString = Console.ReadLine();
