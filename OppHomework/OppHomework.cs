@@ -53,9 +53,10 @@
                 }
             });
 
-            DisplayItemsInfo( items );
+            DisplayItemsInfo(items);
         }
 
+        // вывод
         static void DisplayItemsInfo(List<IOrderProcessingSystem> items, string indent = "|| ")
         {
             foreach (var item in items)

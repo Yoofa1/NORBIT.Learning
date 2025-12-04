@@ -1,7 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel;
-
-internal class OppLOne
+﻿internal class OppLOne
 {
     static void Main(string[] args)
     {
@@ -75,7 +72,7 @@ public class File : IFileSystemElement
 {
     public string Name { get; set; }
     protected int _size;
-   
+
     public int GetSize()
     {
         return _size;
@@ -86,7 +83,7 @@ public class File : IFileSystemElement
 public class Directory : IFileSystemElement
 {
     public string Name { get; set; }
-    public List<IFileSystemElement> Items {  get; set; }
+    public List<IFileSystemElement> Items { get; set; }
 
     public int GetSize()
     {
@@ -121,11 +118,11 @@ public abstract class FileSystemElement
         var fse = new Drive();
     }
 
-    public void SuperNewMethod(int value,  string name)
+    public void SuperNewMethod(int value, string name)
     {
 
     }
-   
+
 }
 
 public abstract class BaseFileSystemElement

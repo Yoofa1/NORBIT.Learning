@@ -1,7 +1,6 @@
 ﻿using HomeworkOneLibrary;
-using LessonOneLibrary;
 using HomeworkTwoLibrary;
-using System;
+using LessonOneLibrary;
 
 namespace LessonOneApp
 {
@@ -9,7 +8,7 @@ namespace LessonOneApp
     {
         static void Main(string[] args)
         {
-            GetNumbersAndSquare();
+            // GetNumbersAndSquare();
 
             Greeting();
 
@@ -85,9 +84,9 @@ namespace LessonOneApp
 
             Console.WriteLine(arrowResult);
         }
-        
+
         // проверка
-        static void CheckValueGreatThan(int value, string message, 
+        static void CheckValueGreatThan(int value, string message,
             string paramName, int limit = 0)
         {
             if (value < limit)

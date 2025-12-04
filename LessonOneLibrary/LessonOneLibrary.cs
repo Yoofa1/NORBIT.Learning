@@ -18,7 +18,7 @@
         {
             string numbers = "";
 
-            for (int i = 1; i <= number; i+=2)
+            for (int i = 1; i <= number; i += 2)
             {
                 numbers += i + ",";
             }
@@ -55,6 +55,6 @@
             }
             return square;
 
-        }   
+        }
     }
 }
