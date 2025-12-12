@@ -70,17 +70,17 @@ namespace AdoNetHomework
         }
     }
 
-    class Reader
-    {
-        public string title { get; set; }
-        public string author { get; set; }
-        public string publisher { get; set; }
-        public int? age_limit { get; set; }
-        public string genre { get; set; }
+    //class Reader
+    //{
+    //    public string title { get; set; }
+    //    public string author { get; set; }
+    //    public string publisher { get; set; }
+    //    public int? age_limit { get; set; }
+    //    public string genre { get; set; }
 
-        public override string ToString()
-        {
-            return $"{title}, {author}, {publisher}, {age_limit}, {genre}";
-        }
-    }
+    //    public override string ToString()
+    //    {
+    //        return $"{title}, {author}, {publisher}, {age_limit}, {genre}";
+    //    }
+    //}
 }
