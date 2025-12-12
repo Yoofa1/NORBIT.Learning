@@ -43,6 +43,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ADO NET Hw", "ADO NET Hw", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdoNetHomework", "AdoNetHomework\AdoNetHomework.csproj", "{3CD5EE62-2252-4144-ADB8-F3AB98E0147E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ADO NET author coaching", "ADO NET author coaching", "{64135984-C893-4428-9B51-8CB2B8AC7DA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdoNetAuthorTbl", "AdoNetAuthorTbl\AdoNetAuthorTbl.csproj", "{16C3D377-847A-430B-AFC9-E6375C4044E1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -85,6 +89,10 @@ Global
 		{3CD5EE62-2252-4144-ADB8-F3AB98E0147E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3CD5EE62-2252-4144-ADB8-F3AB98E0147E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3CD5EE62-2252-4144-ADB8-F3AB98E0147E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16C3D377-847A-430B-AFC9-E6375C4044E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16C3D377-847A-430B-AFC9-E6375C4044E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16C3D377-847A-430B-AFC9-E6375C4044E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16C3D377-847A-430B-AFC9-E6375C4044E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -105,6 +113,7 @@ Global
 		{102189B4-E9E6-4B7B-8269-BB413710F97C} = {1442EAF4-43BB-4A5E-AB5D-3775A78D2B11}
 		{E02FE0FA-B557-4B49-9566-A00438367493} = {0553CF5E-2AE2-4F98-845B-1BDDC3FFA5A3}
 		{3CD5EE62-2252-4144-ADB8-F3AB98E0147E} = {058988E2-9F04-4DE1-8A0C-FEF5588A9AB7}
+		{16C3D377-847A-430B-AFC9-E6375C4044E1} = {64135984-C893-4428-9B51-8CB2B8AC7DA5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {00343401-95F5-44B9-AEB1-3895E253622E}
