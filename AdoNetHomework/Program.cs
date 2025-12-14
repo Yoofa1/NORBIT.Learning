@@ -52,6 +52,11 @@ namespace AdoNetHomework
             DisplayList(readers);
         }
 
+        /// <summary>
+        /// вывод листа 
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="list"></param>
         private static void DisplayList<T>(IEnumerable<T> list)
         {
             foreach (var item in list)
@@ -59,7 +64,11 @@ namespace AdoNetHomework
                 Console.WriteLine(item);
             }
         }
-
+        /// <summary>
+        /// проверка значения с типом int
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
         public static int? GetInt(object value)
         {
             if (value == DBNull.Value)
@@ -69,18 +78,4 @@ namespace AdoNetHomework
             return (int)value;
         }
     }
-
-    //class Reader
-    //{
-    //    public string title { get; set; }
-    //    public string author { get; set; }
-    //    public string publisher { get; set; }
-    //    public int? age_limit { get; set; }
-    //    public string genre { get; set; }
-
-    //    public override string ToString()
-    //    {
-    //        return $"{title}, {author}, {publisher}, {age_limit}, {genre}";
-    //    }
-    //}
 }
